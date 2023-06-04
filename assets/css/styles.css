@@ -3,3 +3,7 @@
     Date : 04/06/2023
     Version : 1.0
 */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
