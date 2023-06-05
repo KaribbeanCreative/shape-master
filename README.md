@@ -24,11 +24,11 @@ It includes various features such as :
 The challenge is to build a pleasant interface that will allow you to simply follow your fitness goal.
 
 Users should be able to :
-- Calculate their BMI ;
+- **Calculate their BMI**
+The purpose of this feature is to encode a **BMI calculator** from the values entered by a user in the **inputs**.
+
 - Follow the total number of daily steps ;
 - Enter measurements easily and follow their evolution ;
-
-and much more to coming !
 
 
 

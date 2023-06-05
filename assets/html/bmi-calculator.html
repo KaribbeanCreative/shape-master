@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shape Master</title>
+        <meta name="author" content="Karibbean Creative">
+
+        <meta name="description" content="Découvrez ShapeMaster, l'application moderne et épurée qui vous aide à atteindre vos objectifs de remise en forme. Suivez votre progression, calculez votre IMC, profitez de programmes d'entraînement personnalisés et bénéficiez de conseils nutritionnels pour une transformation réussie. Avec ShapeMaster, vivez une expérience utilisateur fluide et intuitive, que vous soyez un homme ou une femme. Rejoignez notre communauté et sculptez votre corps de manière saine et motivante. Téléchargez ShapeMaster dès aujourd'hui et faites de votre forme physique une priorité.">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/fire.png"/>
+
+        <link rel="stylesheet" href="../dist/tailwind.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- Logo -->
+            <div>
+                <a href="../../index.html">
+                    <img src="../images/fire.png" alt="ShapeMaster Logo">
+                    <h1>Shape Master</h1>
+                </a>
+            </div>
+
+            <!-- Menu -->
+            <ul>
+                <li>
+                    <a href="../../index.html">IMC Calculator</a>
+                </li>
+                <!-- <li>
+                    <a href="step-counter.html">Compteur</a>
+                </li> -->
+            </ul>
+        </header>
+
+        <body>
+            <section id="container">
+                <h1>IMC Calculator</h1>
+
+                <fieldset>
+                    <legend>Choissis ton sexe :</legend>
+
+                    <!-- Woman -->
+                    <div>
+                        <input type="radio" id="woman" value="woman">
+                        <label for="woman">Femme 🧍🏽‍♀️</label>
+                    </div>
+
+                    <!-- Man -->
+                    <div>
+                        <input type="radio" id="man" value="man">
+                        <label for="man">Homme 🧍🏽‍♂️</label>
+                    </div>
+                </fieldset>
+ 
+                <form action="">
+                    <article>
+                        <!-- Age -->
+                        <div class="input-group">
+                            <label for="age">Age :</label>
+                            <input type="number" id="age" name="age" required>
+                        </div>
+
+                        <!-- Height -->
+                        <div class="input-group">
+                            <label for="height">Votre taille :</label>
+                            <input type="number" id="height" name="height" required>
+
+                            <label for="height-unit-select"></label>
+                            <select name="height-unit-select" id="height-unit-select">
+                                <option value="centimetre">cm</option>
+                                <option value="inches">in</option>
+                                <option value="feets">ft</option>
+                            </select>
+                        </div>
+            
+
+                        <!-- Weight -->
+                        <div class="input-group">
+                            <label for="weight">Votre poids :</label>
+                            <input type="number" id="weight" name="weight" required>
+
+                            <label for="weight-unit-select"></label>
+                            <select name="weight-unit-select" id="weight-unit-select">
+                                <option value="kilogramme">kg</option>
+                                <option value="pound">lb</option>
+                                <option value="ounce">oz</option>
+                            </select>
+                        </div>
+
+                        <button type="submit">Calculer</button>
+                    </article>
+                </form>            
+            </section>
+        </body>
+
+        <footer>
+            <p>Dope Code by <a href="https://github.com/karibbeanCreative" target="_blank">Karibbean Creative</a></p>
+        </footer>
+
+        <script src="../javascript/bmi-calculator.js"></script>
+    </body> 
+</html>
